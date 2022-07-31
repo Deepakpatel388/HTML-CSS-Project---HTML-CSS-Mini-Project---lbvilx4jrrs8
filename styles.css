@@ -1,1 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+/* scroll bar styling for vertical */
+::-webkit-scrollbar {
+    width: 6px !important;
+    height: 6px !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#logo{
+    border-radius: 30%;
+}
+
+/* images hover */
+img{
+    margin-bottom: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+header{
+    min-height: 75vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), url(images/home2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.home{
+    position: relative;
+    display: flex; 
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    transition: 0.5s ease-in-out;
+}
+
+.home h1{
+    color: rgb(250, 129, 43);
+}
+
+.home h2{
+    color: rgb(247, 109, 11);
+}
+
+.home p{
+    color: rgb(0, 184, 240);
+    font-size: 20px;
+    
+}
+
+.home:hover{
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    padding: 1% 5%;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 25px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgb(0, 184, 240);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 107, 1);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    font-size: 25px;
+}
+
+/* all container */
+.container{
+    width: auto;
+    min-height: 400px;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 1rem;
+    box-shadow: 0 10px 20px #ccc;
+    
+
+}
+
+.dives{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.spans{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.services img{
+    width: 75px;
+    height: 75px;
+}
+
+/* appliances */
+
+.app img{
+    width: 170px;
+    height: 170px;
+}
+
+#video img{
+    width: 270px;
+    height: 170px;
+}
+
+/* Spa Services */
+.spa img{
+    width: 250px;
+    height: 200px;
+}
+
+/* cleaning and pest control */
+
+.cleaning img{
+    width: 250px;
+    height: 200px;
+}
+
+/* luxury experiances */
+
+
+.luxury img{
+    width: 250px;
+    height: 200px;
+}
+
+/* about */
+
+.about{
+    font-size: 25px;
+    color: rgb(145, 255, 0);
+    background-image: linear-gradient(rgb(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), url(images/home.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.about p{
+    width: 60%;
+}
+/* footer */
+
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    /* background-color: rgb(202, 93, 166); */
+    background-color: #0093E9;
+    background-image: linear-gradient(to right, #0093E9 0%, #80D0C7 100%);
+    height: 40px;
+}
+
+.foot a{
+    margin: 5px;
+    padding: 5px;
+   
+}
+
+/* .foot span{
+    color: rgb(2, 2, 2);
+    
+} */
+
+.foot a:hover{
+    font-size: 25px;
+
+}
+
+/* page 2 about us */
+
+.aboutus{
+    font-size: 20px;
+    margin: auto;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.inner{
+    width: 80%;
+    margin: auto;
+    background-color: aquamarine;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* forms */
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: linear-gradient(rgba(178, 222, 233, 0.3), rgba(221, 131, 131, 0.3)), url(images/bookingback.jpg); */
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn{
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 3px 3px 15px #000;
+
+}
+
+.forme{
+    margin: 8px 0px;
+    padding: 5px;
+    background-color: #ffe53baa;
+    color: rgb(0, 0, 0);
+}
+
+.space{
+    margin: 8px 0px;
+    padding: 5px;
+    background-color: #ffe53baa;
+    color: rgb(0, 0, 0);
+}
+
+label{
+    display: inline-block;
+    width: 65px;
+}
+
+/* page 4 */
+
+.abtme{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(rgba(178, 222, 233, 0.3), rgba(221, 131, 131, 0.3)), url(images/bookingback.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.left{
+    width: 48%;
+    font-size: 25px;
+}
+
+.right{
+    width: 48%;
+}
+
+
 
